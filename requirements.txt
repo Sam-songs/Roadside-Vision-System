@@ -1,0 +1,14 @@
+#虚拟环境 ubuntu 20.04 24.04 通过测试
+#conda create -n NAME python=3.10
+#conda activate NAME
+#python -m pip install -r requirements.txt
+#如遇到QT xcb 问题，命令行输入QT_DEBUG_PLUGINS=1回车，运行程序，查看报错，安装对应包，常见错误可执行：sudo apt-get install libxcb-xinerama0 
+#locate libqxcb.so 或在程序中加入os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '/usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so'
+ultralytics==8.3.199
+tqdm==4.67.1
+supervision==0.26.1
+pretrainedmodels==0.7.4
+torchsummary==1.5.1
+albumentations==2.0.8
+einops
+pyqt
